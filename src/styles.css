@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+:root {
+    --background-color: #FFFFFF;
+    --text-color: #010101;
+    --secondary-color: #CFCFCF;
+    --success-color: #7DC743;
+    --danger-color: #EF4B5E;
+    --info-color: #5984C6;
+
+    --title-size: 30px;
+    --default-size: 16px;
+
+    --default-gap: 27px;
+    --default-border-radius: 6px;
+
+    @media (prefers-color-scheme: dark) {
+        --background-color: #212121;
+        --text-color: #FFFFFF;
+        --secondary-color: #4D4D4D;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--text-color);
+
+    font-family: 'JetBrains Mono', sans-serif;
+    font-size: var(--default-size);
+
+    overflow: hidden;
+}
+
+.container {
+    margin: 50px;
+}
+
+.title {
+    font-size: var(--title-size);
+    font-weight: bold;
+
+    .title__author {
+        font-size: var(--default-size);
+        color: var(--secondary-color);
+        font-weight: normal;
+    }
+}
